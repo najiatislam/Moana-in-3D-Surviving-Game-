@@ -161,17 +161,6 @@ def setupCamera():
                  0, 0, 1)
 
 
-def start_reload():
-    global reloading, reload_start_time
-    reloading = True
-    reload_start_time = time.time()
-
-def check_reload():
-    global reloading, arrows_left
-    if reloading and time.time() - reload_start_time >= RELOAD_TIME:
-        reloading = False
-        arrows_left = MAX_ARROWS
-
 
 
 def check_game_time():
